@@ -83,7 +83,7 @@ export default function Portfolio() {
 
   const TypedText = ({
     text,
-    speed = 150,
+    speed = 160,
   }: {
     text: string;
     speed?: number;
