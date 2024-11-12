@@ -92,7 +92,7 @@ export default function Portfolio() {
 
     useEffect(() => {
       let i = 0;
-      let timeoutId: NodeJS.Timeout;
+      let timeoutId: ReturnType<typeof setTimeout>;
 
       const typingAnimation = () => {
         setDisplayText((prev) => prev + text.charAt(i));
