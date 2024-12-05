@@ -69,7 +69,7 @@ export default function Portfolio() {
       if (ref.current) {
         observer.observe(ref.current);
       }
-    }); 
+    });
 
     return () => observer.disconnect();
   }, [observerCallback]);
@@ -240,17 +240,25 @@ export default function Portfolio() {
                     {[
                       {
                         id: 1,
-                        title: "Primer Proyecto",
+                        title: "E-Commerce Store",
                         description:
                           "E-commerce store built with Html and  CSS. Features include product filtering, sorting, and cart management.",
                         link: "https://frontednstorebydevmauro.netlify.app/",
                       },
                       {
                         id: 2,
-                        title: "Segundo Proyecto",
+                        title: "LUMA, Solar Activity Analysis",
                         description:
                           "The easiest way to access statistical results in the analysis of solar activity. All in an interface made for everyone.",
                         link: "https://lumaweb.vercel.app/es",
+                      },
+
+                      {
+                        id: 3,
+                        title: "Dashboard / Store for a Retail Company store",
+                        description:
+                          "A simple weather app that displays the current weather and forecast for the next 5 days.",
+                        link: "https://4fwears.vercel.app/pages/HomePage",
                       },
                     ].map((project) => (
                       <motion.div
